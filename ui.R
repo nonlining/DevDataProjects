@@ -18,7 +18,7 @@ shinyUI(
                             textInput(inputId="text2", label = "Predictor variable"),
                             p('Predicted variable'),
                             verbatimTextOutput("pred"),
-                            helpText("This application using 2 data set in regression class, Diamond and Galton. You can use selec which data set you want to use. It will show regression model plot, Residuals and summary in left side.",
+                            helpText("This application using 2 data set in regression class, Diamond and Galton. You can use select which data set you want to use. It will also show regression model plot, Residuals and summary on left side.",
                                      "After you select the data set, you can use text box for predict diamond price with caret or child high with parent high.")
 
                           ),
@@ -30,7 +30,7 @@ shinyUI(
                             tabsetPanel(type = "tabs", 
                                         tabPanel("Plot", plotOutput("Plot")),
                                         tabPanel("Residuals and Summary", 
-                                                 plotOutput("mpgPlot"),
+                                                 plotOutput("rPlot"),
                                                  verbatimTextOutput("fit")
                                         )
                             )

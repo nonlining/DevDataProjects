@@ -1,5 +1,5 @@
 library(shiny)
-library(datasets)
+
 library(UsingR)
 
 data(diamond)
@@ -68,7 +68,7 @@ shinyServer(
     
     
     
-    output$mpgPlot <- renderPlot({
+    output$rPlot <- renderPlot({
       if(input$variable == 'diamond'){
         plot(diamond$price, resid(fit()));
       }
