@@ -17,7 +17,9 @@ shinyUI(
                                         )),
                             textInput(inputId="text2", label = "Predictor variable"),
                             p('Predicted variable'),
-                            verbatimTextOutput("pred")
+                            verbatimTextOutput("pred"),
+                            helpText("This application using 2 data set in regression class, Diamond and Galton. You can use selec which data set you want to use. It will show regression model plot, Residuals and summary in left side.",
+                                     "After you select the data set, you can use text box for predict diamond price with caret or child high with parent high.")
 
                           ),
 
